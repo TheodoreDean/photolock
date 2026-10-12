@@ -1,16 +1,13 @@
 <!doctype html>
-<html lang="zh-Hans" class="i18n-pending">
+<html lang="zh-Hans">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="photoLock support." />
-    <title>Support · photoLock</title>
+    <meta name="description" content="photoLock 的密码、导入导出、权限和数据恢复说明。" />
+    <title>支持 · photoLock</title>
     <link rel="icon" href="./favicon.svg" />
-    <style>
-      html.i18n-pending body { visibility: hidden; }
-    </style>
-    <script type="module" crossorigin src="./assets/main-Du5iW9KH.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-BK4kxkN9.css">
+    <script type="module" crossorigin src="./assets/main-31gVMs_V.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-nkCYeB6z.css">
   </head>
   <body data-page="support">
     <a class="skip" href="#content">Skip to content</a>
@@ -24,10 +21,10 @@
         photoLock
       </a>
       <nav class="nav">
-        <a data-nav="index" href="./index.html" data-i18n="navHome"></a>
-        <a data-nav="privacy" href="./privacy.html" data-i18n="navPrivacy"></a>
-        <a data-nav="terms" href="./terms.html" data-i18n="navTerms"></a>
-        <a data-nav="support" href="./support.html" data-i18n="navSupport"></a>
+        <a data-nav="index" href="./index.html" data-i18n="navHome">首页</a>
+        <a data-nav="privacy" href="./privacy.html" data-i18n="navPrivacy">隐私政策</a>
+        <a data-nav="terms" href="./terms.html" data-i18n="navTerms">使用条款</a>
+        <a data-nav="support" href="./support.html" data-i18n="navSupport">支持</a>
         <div class="lang" role="group">
           <button type="button" data-lang-set="zh">中文</button>
           <button type="button" data-lang-set="en">EN</button>
@@ -35,11 +32,32 @@
       </nav>
     </header>
     <main class="wrap doc" id="content">
-      <article id="doc"></article>
+      <article id="doc">
+        <h1>支持</h1>
+        <p class="updated">最近更新：2026年10月12日</p>
+        <h2>photoLock 做什么</h2>
+        <p>它把你选中的照片和视频加密后放进应用自己的沙盒。系统相册和其他应用读不到这些加密文件。更多细节见<a href="./privacy.html">《隐私政策》</a>。</p>
+        <h2>设置密码</h2>
+        <p>第一次打开时选择 4 位或 6 位数字密码，并再输入一次确认。设备支持时，可以同时启用人脸或指纹解锁。生物识别只会进入真实相册。</p>
+        <h2>伪装密码</h2>
+        <p>设置时可以另外指定一个等长、且不同于真实密码的伪装密码，之后也能在真实相册的设置里修改或移除。</p>
+        <p>输入伪装密码会看到另一个相册。那个界面不会提示你正处于伪装空间。你可以往里面导入一些普通照片，让它看起来像日常相册。</p>
+        <h2>导入、删除原文件与导出</h2>
+        <p>解锁后可以新建相册。进入某个相册或「全部」后点「导入」，先选择是否同时从系统相册删除原文件，再挑选照片或视频。选择删除后，它们会进入 iOS 的「最近删除」，而不是立刻从设备上永久抹去。</p>
+        <p>你可以在应用里把项目导出回系统相册。导出会保留保险箱里的副本，直到你自己删除它。</p>
+        <h2>忘记密码</h2>
+        <p>无法找回，也无法重置。密码没有保存在开发者处。如果真实密码和伪装密码都忘记了，只能删除应用。删除后，保险箱里的加密文件也会消失。</p>
+        <h2>权限被拒绝</h2>
+        <p>如果删除原文件或导出失败，请到 iOS 的「设置 &gt; photoLock」中允许照片访问。只导入新项目时，通常不需要授予整个相册的权限。</p>
+        <p>生物识别不可用时，请确认设备已经设置面容 ID 或触控 ID，并且没有在系统里停用 photoLock 的权限。</p>
+        <h2>备份</h2>
+        <p>保险箱文件不会进入 iCloud 或电脑备份。换机或卸载前，请先把需要保留的内容导出到系统相册，再由你自己的备份方式保存。</p>
+        <h2>联系</h2>
+        <p>仍需帮助，或要报告隐私问题，请写邮件到 <a href="mailto:bobojensen@163.com">bobojensen@163.com</a>。请不要在邮件里附上密码或私人照片。</p>
+      </article>
     </main>
     <footer class="site-footer">
-      <p data-i18n="footerNote"></p>
+      <p data-i18n="footerNote">photoLock 只在你的设备上处理照片和视频。</p>
     </footer>
-    <noscript>请启用 JavaScript 查看此页面。Please enable JavaScript to view this page.</noscript>
   </body>
 </html>
